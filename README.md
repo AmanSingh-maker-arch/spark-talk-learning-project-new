@@ -1,97 +1,76 @@
-# SparkTalk 🚀
+# Spark-Talk 💬
 
-SparkTalk is a modern AI-powered real-time chat application that enables users to communicate seamlessly through multiple channels while leveraging Generative AI for intelligent conversation assistance. The platform combines secure authentication, real-time messaging, and AI-generated replies to create a smarter and more engaging chat experience.
+A real-time group chat application explored as a hands-on learning project to understand modern web application architecture, authentication, and chat integration.
 
----
+## 📌 About the Project
 
-## 🌟 Features
+Spark-Talk is a web-based group chat application with channels for different technical topics. I explored the existing codebase, set up the application locally, and investigated authentication and chat connection issues while learning how its components work together.
 
-### 💬 Real-Time Messaging
-- Instant messaging with real-time updates
-- Create and join multiple chat channels
-- Smooth and responsive chat experience
-- Reliable message synchronization using Stream Chat
+## ✨ Features
 
-### 🤖 AI-Powered Reply Assistant
-- Context-aware AI reply generation using Google Gemini
-- Generates intelligent responses based on recent conversation history
-- Enhances communication efficiency and user engagement
-- Provides quick reply suggestions within chats
+- Topic-based chat channels
+- User authentication using Clerk
+- Real-time chat functionality powered by Stream Chat
+- Channel creation and navigation
+- Next.js-based web application
 
-### 🔐 Secure Authentication
-- User authentication and management with Clerk
-- Protected routes and secure access control
-- Personalized user profiles
-
-### 📡 Scalable Architecture
-- Built using Next.js and Stream Chat infrastructure
-- Optimized for performance and scalability
-- Production-ready deployment on Vercel
-
----
+*Features may depend on the original project's configuration and working services.*
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- Next.js
-- React.js
-- Tailwind CSS
-- Stream Chat React SDK
+- **Framework:** Next.js
+- **Language:** JavaScript
+- **Authentication:** Clerk
+- **Chat:** Stream Chat
+- **Runtime / Package Manager:** Node.js and npm
 
-### Backend
-- Next.js API Routes
-- Node.js
+## 📚 What I Learned
 
-### Authentication
-- Clerk
+- Setting up a Next.js project locally
+- Understanding project structure and API routes
+- Exploring authentication and user-token handling
+- Tracing chat connection issues through application components
+- Using VS Code and npm for development and debugging
 
-### AI Integration
-- Google Generative AI (Gemini)
+## 🚀 Run Locally
 
-### Deployment
-- Vercel
+1. Clone this repository:
 
----
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
 
-## 🏗️ Architecture
+2. Open the project directory:
 
-```text
-User
-  │
-  ▼
-Next.js Frontend
-  │
-  ├── Clerk Authentication
-  │
-  ├── Stream Chat
-  │
-  └── AI Assistant API
-          │
-          ▼
-    Google Gemini API
-```
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
 
----
+3. Install dependencies:
 
-## 🤖 AI Reply Generation Workflow
+   ```bash
+   npm install
+   ```
 
-1. User sends messages in a chat channel.
-2. SparkTalk retrieves the latest messages from the conversation.
-3. Recent chat history is sent to the Gemini model as context.
-4. Gemini generates a context-aware reply suggestion.
-5. The AI-generated response is displayed to the user.
+4. Configure the environment variables required by the original application and its connected services.
 
-```text
-Chat Messages
-      │
-      ▼
-Retrieve Recent Messages
-      │
-      ▼
-Google Gemini API
-      │
-      ▼
-AI Suggested Reply
-```
+5. Start the development server:
 
----
+   ```bash
+   npm run dev
+   ```
+
+6. Open `http://localhost:3000` in your browser.
+
+## 🔐 Configuration & Security
+
+Authentication and chat functionality may require valid Clerk and Stream Chat configuration. Never commit API secrets, private keys, or environment files containing credentials.
+
+## 🙌 Acknowledgment
+
+This repository is used for learning and understanding an existing application. Original authors and contributors should be credited appropriately.
+
+## 📄 Project Status
+
+Learning project — local setup and debugging exploration. Some features may require additional configuration before they work fully.
+
